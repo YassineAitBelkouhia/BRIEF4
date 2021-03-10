@@ -1,4 +1,2 @@
 # BRIEF4
-
-<img src="UML/Trello/Starter.jpeg >
-<img src="UML/Trello/Final.jpeg >
+OUISSAL ED-DOUJ & YASSINE AIT BELKOUHIA
