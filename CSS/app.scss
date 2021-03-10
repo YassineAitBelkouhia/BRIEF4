@@ -36,7 +36,7 @@ body{
        }
       }
      }
-     @media screen and (max-width:900px){
+     @media screen and (max-width:1200px){
       .menuContent{
        display: none;
       }
@@ -68,7 +68,7 @@ body{
      }
     }
    
-    @media screen and (max-width:900px){
+    @media screen and (max-width:1200px){
      .navigation{
       padding-left: 20px;
       padding-right: 20px;
@@ -161,7 +161,7 @@ body{
 
     }
 
-    @media screen and (max-width:900px){
+    @media screen and (max-width:1200px){
         .mainHeader{
             display: flex;
             flex-direction: column;
@@ -311,7 +311,7 @@ body{
         }
     }
 
-    @media screen and (max-width:900px){
+    @media screen and (max-width:1200px){
         .SectionTwo{
             width: 95%;
             .textContainer{
@@ -443,7 +443,7 @@ body{
             }
         }
     }
-    @media screen and (max-width:900px){
+    @media screen and (max-width:1200px){
         .ftrContainer{
             display: flex;
             flex-direction: column;

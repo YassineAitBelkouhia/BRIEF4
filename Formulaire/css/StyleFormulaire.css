@@ -131,6 +131,12 @@ body .navigationPopup hr {
   border: #239897 solid 1px;
 }
 
+@media screen and (max-width: 400px) {
+  body .navigationPopup {
+    margin-bottom: -10px;
+  }
+}
+
 body .photonav {
   width: 100%;
 }

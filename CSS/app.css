@@ -55,7 +55,7 @@ body .navigation .menuContent a:hover {
   color: #239897;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   body .navigation .menuContent {
     display: none;
   }
@@ -88,7 +88,7 @@ body .navigation .burgerMenu .min {
   overflow: hidden;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   body .navigation {
     padding-left: 20px;
     padding-right: 20px;
@@ -210,7 +210,7 @@ body .mainHeader .headerImg {
   width: auto;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   body .mainHeader {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -401,7 +401,7 @@ body .SectionTwo .textContainer .managePickBtns .Btn:hover {
   color: #232144;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   body .SectionTwo {
     width: 95%;
   }
@@ -628,7 +628,7 @@ body .ftrContainer .contact .elemContainer .textLogos {
   gap: 53px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   body .ftrContainer {
     display: -webkit-box;
     display: -ms-flexbox;
