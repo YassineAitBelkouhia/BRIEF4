@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="CSS/app.css">
+ <link rel="stylesheet" href="CSS/Gallery.css">
  <title>Shand</title>
 </head>
 <body>
@@ -32,59 +32,54 @@
         <hr>
       </div>
 
-    <section class="mainHeader">
-     <div class="headerText">
-      <h1 class="headerOne">A GREAT PLACE FOR <span class="greenText">EDUCATION</span> </h1>
-      <h3 class="parOne">A learning comunity dedicated to building respectful and responsible citizens and
-       empowering all learners.</h3>
-      <div class="BtnContainer">
-       <button id="studentsBtn" class="Btn">I'M A STUDENT</button>
-       <button id="adminsBtn" class="Btn">I'M AN ADMIN</button>
+      <div class="galleryHeader">
+       <div class="galleryHeaderText">
+        <h1 class="galleryHeaderH1">School <span class="greenText">Events</span> Gallery</h1>
+        <p class="galleryHeaderPar">
+         Social events, trips and other interesting ways students learn with The Boston School
+        </p>
+        <button class="galleryHeaderBtn"> <a style="text-decoration: none; color: whitesmoke;" href="#GalleryEvents">SHOW EVENTS</a></button>
+       </div>
+       <img src="images/illu gallery.png" alt="" class="galleryHeaderImg">
       </div>
-       
-     </div>
-     <img src="images/heading.png" alt="" class="headerImg">
-    </section>  
-    <img src="images/navBack.png" alt="">
 
+      <img src="images/navBack.png" alt="">
 
-    <section class="SectionTwo">
-     <div id="defaultText" class="textContainer" >
-      <p class="sectionTwoText">
-       We are a leading artistic educational provider, offering
-       in-depth learning opportunities for both students and
-       teachers looking to develop their skills. Key information
-       about the University’s history, mission and values,
-       governance and committees, affiliations and
-       associations and official publications.
-      </p>
-     </div>
-     <div id="adminsPick" class="textContainer"style="display: none;" >
-      <h2 class="containerH2">A FAMILY OF LEARNING</h2>
-      <div class="adminsPickBtns">
-       <button id="listBtn" class="Btn">Show students lists</button>
-       <button id="searchBtn" class="Btn">Serach for student</button>
-       <button id="manageBtn" class="Btn">Manage Students</button>
-      </div>
-     </div>
-     <div id="studentsPick" class="textContainer"style="display: none;">
-      <h2 class="containerH2">A FAMILY OF LEARNING</h2>
-      <div class="studentsPickBtns">
-       <button id="listBtn" class="Btn">Show students lists</button>
-       <button id="searchBtn" class="Btn">Serach for student</button>
-      </div>
-     </div>
-     <div id="managePick" class="textContainer" style="display: none;">
-      <h2 class="containerH2">MANAGE STUDENTS</h2>
-      <div class="managePickBtns">
-       <button id="addBtn" class="Btn"><a href="Formulaire/Formulaire.html" style="text-decoration: none; color: whitesmoke";>Add student</a></button>
-       <button id="updatehBtn" class="Btn">Update student</button>
-       <button id="removeBtn" class="Btn">Remove student</button>
-      </div>
-     </div>
-    </section>
-
-    <img src="images/footerback.png" alt="">
+      <section class="gallerySectionOne">
+       <h1 id="GalleryEvents" class="sectionOneH1">All Events School SHAND</h1>
+       <div class="events">
+        <img src="images/EV (1).jpg" alt="" class="event">
+        <div class="eventDiscription">
+         <h1 class="descriptionHeader">Winter Production</h1>
+         <p class="descriptionPar">In the winter trimester, our attention.
+                                   The All School Production,
+                                   of singing, dancing and acting.
+                                   It brings together th and high
+                                   school.</p>
+        </div>
+       </div>
+       <div class="events reversed">
+        <img src="images/event2.jpg" alt="" class="event">
+        <div class="eventDiscriptionReversed">
+         <h1 class="descriptionHeader">International Fair</h1>
+         <p class="descriptionPar">Held in November, the International
+                                   Fair brings together the formidable
+                                   organizational power of our two
+                                   Parent Associations.</p>
+        </div>
+       </div>
+       <div class="events">
+        <img src="images/event3.jpg" alt="" class="event">
+        <div class="eventDiscription">
+         <h1 class="descriptionHeader">School Festival</h1>
+         <p class="descriptionPar">Planned, prepared and run by the
+                                   SOIS student council, the School
+                                   Festival is our big event of the
+                                   spring trimester.</p>
+        </div>
+       </div>
+      </section>
+      <img src="images/footerback.png" alt="">
     <footer class="ftrContainer">
       <div class="page">
        <h1 class="pageheader">Page</h1>
@@ -134,7 +129,6 @@
    
       
      </footer>
-
-<script src="JS/app.js"></script>
+    <script src="JS/app.js"></script>
 </body>
 </html>
