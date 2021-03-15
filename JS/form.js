@@ -29,31 +29,6 @@ xIcon.addEventListener('click',function(){
  burgerMenu.style.display ="block";
 })
 
-
-
-
-
-// function validateNumInscri() {
-//     var NumInscri = document.getElementById("numInscri").value;
-
-//     if (NumInscri.length == 0) {
-//         producePrompt("ce champ est obligatoir", "error", "red");
-//         return false;
-        
-//     }
-
-//     if (!NumInscri.match(/^[0-9]+$/)) {
-//         producePrompt("enter a Number", "error", "red");
-//         return false;
-
-//     }
-
-//     producePrompt("ID is valid", "error", "green");
-//     return true;
-// }
-
-
-
 function validateNom() {
     var Nom = document.getElementById("nom").value;
 
