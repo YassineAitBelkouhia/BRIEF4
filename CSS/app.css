@@ -3,177 +3,20 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body .ftrContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 200px;
-  background: #232144;
-  padding-top: 100px;
-  padding-bottom: 40px;
-  margin-top: -7px;
-  color: whitesmoke;
+html {
+  scroll-behavior: smooth;
 }
 
-body .ftrContainer .page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+body {
+  font-family: poppins;
 }
 
-body .ftrContainer .page .elemContainer {
-  padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 20px;
-}
-
-body .ftrContainer .page .elemContainer .logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-}
-
-body .ftrContainer .page .elemContainer .textLogos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 26px;
-}
-
-body .ftrContainer .connect {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .ftrContainer .connect .elemContainer {
-  padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 20px;
-}
-
-body .ftrContainer .connect .elemContainer .logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-}
-
-body .ftrContainer .connect .elemContainer .textLogos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 26px;
-}
-
-body .ftrContainer .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .ftrContainer .contact .elemContainer {
-  padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 20px;
-}
-
-body .ftrContainer .contact .elemContainer .logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-}
-
-body .ftrContainer .contact .elemContainer .textLogos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 53px;
-}
-
-@media screen and (max-width: 1200px) {
-  body .ftrContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    gap: 80px;
-  }
-  body .ftrContainer .page {
-    display: none;
-  }
+body body {
+  overflow-x: hidden;
 }
 
 body .navigation {
@@ -222,7 +65,7 @@ body .navigation .menuContent a:hover {
   color: #239897;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   body .navigation .menuContent {
     display: none;
   }
@@ -255,7 +98,11 @@ body .navigation .burgerMenu .min {
   overflow: hidden;
 }
 
-@media screen and (max-width: 1200px) {
+body .photonav {
+  margin-bottom: 13px;
+}
+
+@media screen and (max-width: 900px) {
   body .navigation {
     padding-left: 20px;
     padding-right: 20px;
@@ -273,6 +120,9 @@ body .navigationPopup {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   gap: 30px;
   padding: 20px;
@@ -290,10 +140,6 @@ body .navigationPopup hr {
   width: 60%;
   margin: auto;
   border: #239897 solid 1px;
-}
-
-body {
-  font-family: poppins;
 }
 
 body .mainHeader {
@@ -476,7 +322,7 @@ body .SectionTwo .textContainer .adminsPickBtns {
 }
 
 body .SectionTwo .textContainer .adminsPickBtns .Btn {
-  width: 30%;
+  width: 50%;
   margin-top: 2%;
   padding: 14px 62px;
   font-size: 18px;
@@ -509,12 +355,9 @@ body .SectionTwo .textContainer .studentsPickBtns {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 180px;
-  gap: 30px;
 }
 
 body .SectionTwo .textContainer .studentsPickBtns .Btn {
-  width: 40%;
-  margin-top: 2%;
   padding: 14px 62px;
   font-size: 18px;
   font-weight: normal;
@@ -550,7 +393,7 @@ body .SectionTwo .textContainer .managePickBtns {
 }
 
 body .SectionTwo .textContainer .managePickBtns .Btn {
-  width: 40%;
+  width: 50%;
   margin-top: 2%;
   padding: 14px 62px;
   font-size: 18px;
@@ -621,7 +464,7 @@ body .SectionTwo .textContainer .managePickBtns .Btn:hover {
             align-items: center;
     text-align: center;
   }
-  body .SectionTwo #studentsPick .studentsPickBtns .Btn {
+  body .SectionTwo #studentsPick .studentsPickBtns #listBtn {
     width: 90%;
   }
   body .SectionTwo #managePick {
@@ -645,6 +488,177 @@ body .SectionTwo .textContainer .managePickBtns .Btn:hover {
   }
   body .SectionTwo #managePick .managePickBtns .Btn {
     width: 90%;
+  }
+}
+
+body .ftrContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 200px;
+  background-color: #232144;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  margin-top: -7px;
+  color: whitesmoke;
+}
+
+body .ftrContainer .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .ftrContainer .page .elemContainer {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+body .ftrContainer .page .elemContainer .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+body .ftrContainer .page .elemContainer .textLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
+}
+
+body .ftrContainer .connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .ftrContainer .connect .elemContainer {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+body .ftrContainer .connect .elemContainer .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+body .ftrContainer .connect .elemContainer .textLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
+}
+
+body .ftrContainer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .ftrContainer .contact .elemContainer {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+body .ftrContainer .contact .elemContainer .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+body .ftrContainer .contact .elemContainer .textLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 53px;
+}
+
+@media screen and (max-width: 900px) {
+  body .ftrContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 80px;
+  }
+  body .ftrContainer .page {
+    display: none;
   }
 }
 /*# sourceMappingURL=app.css.map */

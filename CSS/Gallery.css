@@ -3,6 +3,8 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -11,6 +13,10 @@ html {
 
 body {
   font-family: poppins;
+}
+
+body body {
+  overflow-x: hidden;
 }
 
 body .navigation {
@@ -92,6 +98,10 @@ body .navigation .burgerMenu .min {
   overflow: hidden;
 }
 
+body .photonav {
+  margin-bottom: 13px;
+}
+
 @media screen and (max-width: 900px) {
   body .navigation {
     padding-left: 20px;
@@ -110,6 +120,9 @@ body .navigationPopup {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   gap: 30px;
   padding: 20px;
@@ -343,6 +356,7 @@ body .gallerySectionOne .reversed .eventDiscriptionReversed .descriptionPar {
   body .gallerySectionOne .events .eventDiscription {
     margin: auto;
     margin-top: 500px;
+    width: 200px;
   }
   body .gallerySectionOne .reversed {
     display: -webkit-box;
@@ -359,6 +373,7 @@ body .gallerySectionOne .reversed .eventDiscriptionReversed .descriptionPar {
   body .gallerySectionOne .reversed .eventDiscriptionReversed {
     margin: auto;
     margin-top: 500px;
+    width: 200px;
   }
 }
 

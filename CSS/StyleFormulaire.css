@@ -7,15 +7,182 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+.ftrContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 200px;
+  background-color: #232144;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  margin-top: -7px;
+  color: whitesmoke;
+}
+
+.ftrContainer .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ftrContainer .page .elemContainer {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.ftrContainer .page .elemContainer .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.ftrContainer .page .elemContainer .textLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
+}
+
+.ftrContainer .connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ftrContainer .connect .elemContainer {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.ftrContainer .connect .elemContainer .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.ftrContainer .connect .elemContainer .textLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
+}
+
+.ftrContainer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ftrContainer .contact .elemContainer {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.ftrContainer .contact .elemContainer .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.ftrContainer .contact .elemContainer .textLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 53px;
+}
+
+@media screen and (max-width: 900px) {
+  .ftrContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 80px;
+  }
+  .ftrContainer .page {
+    display: none;
+  }
 }
 
 body {
-  font-family: poppins;
+  overflow-x: hidden;
 }
 
-body .navigation {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,13 +200,13 @@ body .navigation {
   padding-right: 100px;
 }
 
-body .navigation .logo {
+.navigation .logo {
   font-size: 35px;
   font-weight: 400;
   font-family: poppins;
 }
 
-body .navigation .menuContent {
+.navigation .menuContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,26 +218,26 @@ body .navigation .menuContent {
   gap: 70px;
 }
 
-body .navigation .menuContent a {
+.navigation .menuContent a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 400;
 }
 
-body .navigation .menuContent a:hover {
+.navigation .menuContent a:hover {
   color: #239897;
 }
 
 @media screen and (max-width: 900px) {
-  body .navigation .menuContent {
+  .navigation .menuContent {
     display: none;
   }
-  body .navigation .burgerMenu {
+  .navigation .burgerMenu {
     display: block;
   }
 }
 
-body .navigation .xIcon {
+.navigation .xIcon {
   padding: 0;
   margin: 0;
   display: none;
@@ -79,13 +246,13 @@ body .navigation .xIcon {
   color: #239897;
 }
 
-body .navigation .burgerMenu {
+.navigation .burgerMenu {
   line-height: 10px;
   display: none;
   cursor: pointer;
 }
 
-body .navigation .burgerMenu .min {
+.navigation .burgerMenu .min {
   padding: 0;
   margin: 0;
   font-size: 100px;
@@ -94,14 +261,18 @@ body .navigation .burgerMenu .min {
   overflow: hidden;
 }
 
+.photonav {
+  margin-bottom: 13px;
+}
+
 @media screen and (max-width: 900px) {
-  body .navigation {
+  .navigation {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-body .navigationPopup {
+.navigationPopup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,23 +283,30 @@ body .navigationPopup {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   gap: 30px;
   padding: 20px;
   background-color: #232144;
 }
 
-body .navigationPopup h4 a {
+.navigationPopup h4 a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 400;
 }
 
-body .navigationPopup hr {
+.navigationPopup hr {
   color: #239897;
   width: 60%;
   margin: auto;
   border: #239897 solid 1px;
+}
+
+body {
+  font-family: poppins;
 }
 
 body .photonav {
@@ -158,12 +336,12 @@ body .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 10%;
 }
 
@@ -192,6 +370,7 @@ body .content form .Btn {
   border: none;
   letter-spacing: 1px;
   background: linear-gradient(45deg, #00BBF6, #00C5E3, #00CBD7, #00D4C8, #00DBBB);
+  outline: none;
 }
 
 @media screen and (max-width: 1100px) {
@@ -216,177 +395,6 @@ body .content form .Btn {
   body .countainer .content form input {
     padding: 8px 0px;
     margin: 6px 0px;
-  }
-}
-
-body .ftrContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 200px;
-  background-color: #232144;
-  padding-top: 100px;
-  padding-bottom: 40px;
-  margin-top: -7px;
-  color: whitesmoke;
-}
-
-body .ftrContainer .page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .ftrContainer .page .elemContainer {
-  padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 20px;
-}
-
-body .ftrContainer .page .elemContainer .logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-}
-
-body .ftrContainer .page .elemContainer .textLogos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 26px;
-}
-
-body .ftrContainer .connect {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .ftrContainer .connect .elemContainer {
-  padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 20px;
-}
-
-body .ftrContainer .connect .elemContainer .logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-}
-
-body .ftrContainer .connect .elemContainer .textLogos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 26px;
-}
-
-body .ftrContainer .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .ftrContainer .contact .elemContainer {
-  padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 20px;
-}
-
-body .ftrContainer .contact .elemContainer .logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-}
-
-body .ftrContainer .contact .elemContainer .textLogos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 53px;
-}
-
-@media screen and (max-width: 900px) {
-  body .ftrContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    gap: 80px;
-  }
-  body .ftrContainer .page {
-    display: none;
   }
 }
 /*# sourceMappingURL=StyleFormulaire.css.map */
